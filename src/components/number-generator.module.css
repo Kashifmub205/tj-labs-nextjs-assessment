@@ -1,0 +1,100 @@
+.card {
+  align-items: center;
+  gap: 0;
+}
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+.intro h1,
+.intro p {
+  margin: 0;
+}
+
+.intro h1 {
+  color: #1c252e;
+  font-family: var(--font-barlow), Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+}
+
+.intro p {
+  color: #637381;
+  font-size: 14px;
+  line-height: 22px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.numbers {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  width: 100%;
+}
+
+.numberBox {
+  align-items: center;
+  background: rgba(145, 158, 171, 0.08);
+  border-radius: 8px;
+  color: #1c252e;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 53px;
+  justify-content: center;
+  line-height: 30px;
+  min-width: 0;
+}
+
+.generateButton {
+  background: #000000;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  height: 48px;
+  line-height: 26px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.backLink {
+  align-items: center;
+  color: #1c252e;
+  display: inline-flex;
+  font-size: 14px;
+  gap: 8px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.backLink img {
+  height: 6.24951px;
+  transform: rotate(90deg);
+  width: 12.9008px;
+}
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

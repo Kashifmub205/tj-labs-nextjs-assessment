@@ -8,13 +8,29 @@
   width: 100%;
 }
 
-.language {
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.language,
+.settings {
   align-items: center;
   display: flex;
   height: 40px;
   justify-content: center;
-  margin-left: auto;
   width: 40px;
+}
+
+.settings {
+  display: none;
+}
+
+.settings img {
+  display: block;
+  height: 21.5px;
+  width: 20.357px;
 }
 
 .language img {
@@ -30,5 +46,9 @@
     padding: 0 24px;
     position: absolute;
     top: 0;
+  }
+
+  .settings {
+    display: flex;
   }
 }

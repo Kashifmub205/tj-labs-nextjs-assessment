@@ -1,8 +1,10 @@
+import Link from "next/link";
 import styles from "./sign-in-form.module.css";
+import cardStyles from "./auth-card.module.css";
 
 export function SignInForm() {
   return (
-    <form className={styles.card}>
+    <form className={`${cardStyles.card} ${styles.card}`}>
       <div className={styles.intro}>
         <h1>Sign in</h1>
         <p className={styles.signUpPrompt}>
@@ -31,7 +33,9 @@ export function SignInForm() {
           </div>
         </div>
 
-        <p className={styles.generateNumbers}>Generate numbers</p>
+        <Link className={styles.generateNumbers} href="/generator">
+          Generate numbers
+        </Link>
         <button type="button">Sign in</button>
       </div>
     </form>

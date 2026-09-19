@@ -1,12 +1,5 @@
 .card {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 24px 24px rgba(145, 158, 171, 0.16);
-  display: flex;
-  flex-direction: column;
-  max-width: 420px;
-  padding: 40px 24px;
-  width: 100%;
+  align-items: center;
 }
 
 .intro {
@@ -108,6 +101,7 @@
   font-size: 14px;
   line-height: 22px;
   text-align: right;
+  text-decoration: none;
 }
 
 .fields button {
@@ -125,11 +119,6 @@
 }
 
 @media (min-width: 768px) {
-  .card {
-    align-items: center;
-    padding: 40px;
-  }
-
   .intro h1 {
     font-size: 24px;
     line-height: 36px;
