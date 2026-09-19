@@ -8,6 +8,9 @@
 # local environment files
 .env*
 
+# local agent instructions
+AGENTS.md
+
 # macOS metadata
 .DS_Store
 
