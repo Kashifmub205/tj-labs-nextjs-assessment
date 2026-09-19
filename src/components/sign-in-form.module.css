@@ -1,0 +1,141 @@
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 24px 24px rgba(145, 158, 171, 0.16);
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  padding: 40px 24px;
+  width: 100%;
+}
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+.intro h1,
+.signUpPrompt,
+.generateNumbers {
+  margin: 0;
+}
+
+.intro h1 {
+  color: #1c252e;
+  font-family: var(--font-barlow), Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.signUpPrompt {
+  display: flex;
+  gap: 4px;
+  color: #637381;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.signUpLink {
+  color: #000000;
+  font-weight: 600;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.field {
+  background: rgba(145, 158, 171, 0.08);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 53px;
+  justify-content: center;
+  padding: 0 10px 0 12px;
+  position: relative;
+}
+
+.field label {
+  color: #637381;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.field input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: #1c252e;
+  font: inherit;
+  font-size: 15px;
+  line-height: 22px;
+  min-width: 0;
+  outline: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.field input::placeholder {
+  color: #919eab;
+  opacity: 1;
+}
+
+.passwordInput {
+  align-items: center;
+  display: flex;
+}
+
+.passwordInput img {
+  height: 11.0004px;
+  pointer-events: none;
+  position: absolute;
+  right: 9.24955px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21.5009px;
+}
+
+.generateNumbers {
+  color: #1c252e;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.fields button {
+  background: #000000;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  height: 48px;
+  line-height: 26px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    align-items: center;
+    padding: 40px;
+  }
+
+  .intro h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .fields {
+    width: 100%;
+  }
+}

@@ -11,4 +11,5 @@
 - Preserve semantic HTML and accessibility where appropriate.
 - Do not make unrelated refactors while implementing a focused task.
 - Run relevant type, build, or test checks after meaningful changes.
+- Use a lightweight feature-branch workflow. Keep `main` stable, create focused `feature/*`, `fix/*`, or `docs/*` branches when appropriate, and never commit, merge, or push unless explicitly requested.
 - AI assistance will be disclosed honestly in the README as required by the assessment. Prioritize professional engineering quality rather than concealing AI usage.
